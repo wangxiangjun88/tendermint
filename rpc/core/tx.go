@@ -21,7 +21,8 @@ import (
 //
 // ```go
 // client := client.NewHTTP("tcp://0.0.0.0:26657", "/websocket")
-// tx, err := client.Tx([]byte("2B8EC32BA2579B3B8606E42C06DE2F7AFA2556EF"), true)
+// bs, _ := hex.DecodeString("2B8EC32BA2579B3B8606E42C06DE2F7AFA2556EF") 
+// tx, err := client.Tx(bs, true)
 // ```
 //
 // > The above command returns JSON structured like this:
